@@ -5,6 +5,6 @@ WORKDIR /app
 # Копируем файл requirements.txt внутрь контейнера
 COPY . .
 # Устанавливаем зависимости, описанные в файле requirements.txt
-RUN pip install -r Django
+RUN pip install -r requirements.txt
 
 CMD ["python", "manage.py"]
